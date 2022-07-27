@@ -1,0 +1,379 @@
+body{
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/* navbar */
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    transition: .3s;
+}
+ul li{
+ padding: 10px 15px;
+ 
+}
+ul li:hover > a{
+    color: #f2b91e;
+}
+.social-icon{
+    padding: 10px 0;
+}
+.social-icon i{
+    background-color: #ddd;
+    padding: 10px;
+    border-radius: 50%;
+    transition: .5s;
+}
+.social-icon i:hover{
+    background-color: #f2b91e;
+    color: azure;
+}
+ul{}
+ul li{
+    position: relative;
+    
+}
+ul li ul{
+    position: absolute;
+    width: 250px;
+    visibility: hidden;
+    opacity: 0;
+    top: 180%;
+    padding: 10px ;
+    transition: .4s;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 5px 3px rgb(238, 237, 237);
+    border-top: 2px solid #f2b91e;
+}
+ul li ul li{
+    list-style: none;
+}
+ul li:hover >ul{
+    visibility: visible;
+    opacity: 1;
+    top: 140%;
+}
+ul li ul li a{
+   font-size: 16px;
+  line-height: 40px;
+  transition: .4s;
+}
+ul li ul li ul{
+   left: 100%;
+    top: 0;
+}
+ul li ul li a:hover{
+    letter-spacing: 1px;
+}
+sup{
+    background-color: rgb(175, 6, 6);
+    padding: 0 6px 2px 6px;
+    font-size: 10px;
+    color: white;
+    border-radius: 10px;
+}
+
+/* --------nabbar end ---------*/
+
+
+
+/* ---------banner start---------*/
+
+
+.banner{
+    background-image: url(./images/slide-1.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+   padding: 300px 0;
+}
+.banner-text-wrap{
+
+}
+.banner-text{}
+.banner-text h1{
+    font-size: 70px;
+    font-weight: 700;
+}
+.banner-text h1 span{
+    color: #f2b91e;
+}
+.banner-text p{
+    font-size: 20px;
+}
+/* ----------banner end ---------------*/
+
+
+
+/* ----------form start ---------------*/
+section.login {
+    margin-top: -140px;
+}
+
+.form-section{
+    background-color: #f2b91e;
+    padding: 40px 30px;
+    border-radius: 10px;
+}
+.form h1{
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+.form h1 span{
+    color: white;
+}
+.time{
+    font-weight: 700;
+    font-size: 30px;
+}
+.eml{
+    padding:20px;
+    border: none;
+    width: 60%;
+    border-radius:30px;
+
+    z-index: 00;
+}
+.sub {
+    padding:20px;
+    border: none;
+    width: 20%;
+    border-radius: 30px;
+    margin-left: -48px;
+    z-index: 111;
+    background-color: #2d4649;
+    color: white;
+}
+
+/* ----------form end ---------------*/
+
+
+/* --------about start------------- */
+
+.about{
+    padding: 130px 0 70px 0;
+}
+.signiture h1 {
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 45px;
+    padding-bottom: 30px;
+}
+.detils p {
+    font-size: 19px;
+    line-height: 34px;
+}
+
+
+/* --------about end------------- */
+
+
+/* -------cource start---------- */
+
+.all-cource{
+    background-color: #edf2f5;
+    padding: 60px 0 100px 0;
+}
+.all-cource h1{
+    text-align: center;
+    padding-bottom: 50px;
+    font-weight: 700;
+}
+.cource-item{
+    background-color: white;
+    margin: 0 15px;
+    box-shadow: 10px 10px 30px rgb(178, 188, 211);
+    border-radius: 8px;
+    margin-bottom: 40px;
+    position: relative;
+}
+.upper-text{
+    position: absolute;
+    top: 8px;
+    right: 5px;
+}
+.upper-text span{
+    background-color:#f09b23 ;
+    color: white; 
+    font-size: 15px;
+    border-radius: 3px;
+  
+}
+.upper-new-text{
+    position: absolute;
+    top: 8px;
+    right: 5px;
+}
+.upper-new-text span{
+    background-color: #1db874;
+    color: white;
+    border-radius: 3px;
+}
+.cource-price{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .5s ease;
+}
+.cource-price .regular{
+    font-size: 20px;
+    font-weight: 600;
+}
+.cource-item:hover .cource-price{
+    opacity: 1;
+}
+.cource-item:hover .cource-img{
+    opacity: 0.6;
+   
+}
+.cource-img{
+    transition: .2s ease;
+}
+.cource-img img{
+    width: 100%;
+    height: auto;
+    
+}
+.cource-item h2{
+    font-size: 20px;
+    padding: 40px 25px 10px 25px;
+    text-align: center;
+    font-weight: 600;
+    color: #3a3a3a;
+}
+.cource-item p{
+    text-align: center;
+    color: rgb(126, 126, 126);
+    padding-bottom: 20px;
+}
+.cource-item i{
+    color: #f2b91e;
+}
+.cource-item span{
+    padding: 0 5px;
+    font-size: 13px;
+}
+.icons{
+    padding: 5px 10px 10px 10px ;
+}
+.load-more{
+    text-align: center;
+ }
+
+.load-more .btn{
+    color: white;
+    padding: 10px 25px;
+    font-weight: 600;
+    border-radius: 40px;
+}
+/* -------cource end---------- */
+
+
+/*----------Invest Start---------- */
+.invest{
+    background: url(./images/counter-1919x1101.jpg) no-repeat center center;
+    background-size:cover ;
+    padding: 200px 0 0 0;
+}
+.invest-content{
+    padding: 0 0 200px 0;
+}
+.invest-content h1{
+    color: #f09b23;
+    font-weight: 600;
+}
+.invest-content p{
+    color: white;
+    font-size: 17px;
+    padding-top: 20px 0;
+}
+.invest-right{
+    background: url(./images/book.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+
+
+}
+/*----------Invest end---------- */
+
+
+/* ----------why-choose us start--------- */
+
+.why-choose{
+    padding: 100px 0;
+}
+.choose-had{
+  padding-bottom: 50px;
+  font-weight: 600;
+
+}
+.cource-content{
+   box-shadow: 3px 5px 15px 3px rgb(219, 239, 255);
+    padding: 40px;
+    border-left: 4px solid #f09b23;
+    margin-bottom: 30px;
+    transition: .5s ease-in-out;
+}
+.cource-content:hover{
+    background-color: #f09b23;
+    color: white;
+}
+.cource-icon{}
+.cource-icon i{
+    font-size: 30px;
+   
+}
+.cource-detils{
+    padding: 0 30px 0 20px;
+}
+.cource-detils h2{
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.cource-detils p{
+ padding-right: 10px;
+ line-height: 30px;
+}
+/* ----------why-choose us end--------- */
+
+/* -----------footer start------- */
+
+  .footer{
+    background-color: #f09b23;
+    padding: 60px 0 40px 0;
+  }
+  .footer-left{}
+  .footer-all-content h2{
+    font-weight: 600;
+  }
+  .footer-all-content p{
+    padding: 10px 10px;
+   
+  }
+
+/* -----------footer end------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
